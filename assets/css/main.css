@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="ka"><head><meta charset="utf-8"><title></title><link rel="stylesheet" href="/assets/css/main.css"></head><body><header></header></body></html><article>html {
+html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -218,4 +218,3 @@ ul li {
   padding: 2px 0;
   padding: 0.125rem;
 }
-</article><footer><p>&copy; Alex Ketch 2015</p></footer><script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
