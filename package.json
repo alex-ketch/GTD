@@ -23,8 +23,10 @@
   },
   "homepage": "https://github.com/alex-ketch/GeoType#readme",
   "devDependencies": {
+    "axis": "^0.5.0",
     "harmonize": "^1.4.4",
     "jade": "^1.11.0",
+    "kouto-swiss": "^0.11.13",
     "metalsmith": "^2.0.1",
     "metalsmith-autoprefixer": "^1.1.0",
     "metalsmith-clean-css": "^2.0.0",

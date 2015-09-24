@@ -8,11 +8,13 @@ var Metalsmith = require('metalsmith'),
   permalinks = require('metalsmith-permalinks'),
   layouts = require('metalsmith-layouts'),
   coffee = require('metalsmith-coffee'),
-  stylus = require('metalsmith-stylus'),
   cleanCSS = require('metalsmith-clean-css'),
   copy = require('metalsmith-copy'),
   watch = require('metalsmith-watch'),
-  serve = require('metalsmith-serve');
+  serve = require('metalsmith-serve'),
+  stylus = require('metalsmith-stylus'),
+  koutoSwiss = require('kouto-swiss'),
+  axis = require('axis');
 
 new Metalsmith(__dirname)
   .metadata({
@@ -25,7 +27,11 @@ new Metalsmith(__dirname)
   .ignore(['./','./package.json','./node_modules/','./build.js','./README.md','./src/', './src/layouts/'])
   .destination('./')
   .use(coffee())
-  .use(stylus())
+  .use(stylus(
+    {
+      use: [koutoSwiss(), axis()]
+    }
+  ))
   .use(autoprefixer())
   .use(cleanCSS(
     {
