@@ -5,7 +5,8 @@ require('harmonize')(['harmony-generators']);
 var Metalsmith = require('metalsmith'),
   markdown = require('metalsmith-markdown'),
   autoprefixer = require('metalsmith-autoprefixer'),
-  jade = require('jade'),
+  permalinks = require('metalsmith-permalinks'),
+  layouts = require('metalsmith-layouts'),
   coffee = require('metalsmith-coffee'),
   stylus = require('metalsmith-stylus'),
   cleanCSS = require('metalsmith-clean-css'),
@@ -14,9 +15,17 @@ var Metalsmith = require('metalsmith'),
   serve = require('metalsmith-serve');
 
 new Metalsmith(__dirname)
+  .metadata({
+    site: {
+      title: 'Georgian Typography & Type Design',
+      url: 'https://type.ge'
+    }
+  })
+  .clean(false)
+  .ignore(['./','./package.json','./node_modules/','./build.js','./README.md','./src/', './src/layouts/'])
+  .destination('./')
   .use(coffee())
   .use(stylus())
-  .use(markdown())
   .use(autoprefixer())
   .use(cleanCSS(
     {
@@ -32,22 +41,35 @@ new Metalsmith(__dirname)
     'directory': 'assets/css',
     'move': true
   }))
+  .use(markdown())
+  .use(permalinks({
+    pattern: ':title',
+    relative: 'false'
+  }))
+  .use(layouts({
+    'engine': 'jade',
+    'default': 'index.jade',
+    'directory': 'layouts',
+    'partials': 'includes'
+  }))
+  .use(serve({
+    port: 8080,
+    verbose: true
+  }))
   .use(
     watch({
       paths: {
-        '${source}/**/*': true,
-        'layouts/**/*': "**/*",
+        '${source}/**/*': true
       },
       livereload: true,
     })
   )
-  .use(serve())
   .build(function(err)
   {
     if (err)
     {
       throw err;
     } else {
-      console.log('The cast is forged!')
+      console.log('The cast is forged!');
     }
   });
