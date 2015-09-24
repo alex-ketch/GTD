@@ -54,7 +54,6 @@ new Metalsmith(__dirname)
   }))
   .use(layouts({
     'engine': 'jade',
-    'default': 'index.jade',
     'directory': 'layouts',
     'partials': 'includes'
   }))
