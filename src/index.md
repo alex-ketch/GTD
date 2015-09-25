@@ -1,6 +1,6 @@
 ---
 layout: index.jade
-title: Home page
+title: Georgian Type Design
 collection: index
 permalink: false
 ---
@@ -46,32 +46,35 @@ permalink: false
 ### ლათინური ასო-ფორმა
 სანამ ჩვენ ნაწერს შევისწავლით, შეგვიძლია მაგალითი ავიღოთ სხვა უფრო დამყარებულ და შესწავლილ ანბანიდან. ერთ-ერთი ყველაზე ანალიზირებული არის ლათინური შრიფტი.
 > Hamburgerfontsiv[^2]
-- Aperture - აპერტურა/ხვრელი
-- Arm - ხელი
-- Ascender - აღმავალი
-- Baseline - ფუძის ხაზი
-- Bowl - თასი
-- Counter - შემხვედრი?
-- Crossbar - განივა
-- Descender - ჩამავალი
-- Diagonal Stroke - დაიგონალური ხაზი
-- Ear - ყური
-- Finial - ფინიალი
-- Hairline - წვრილი ხაზი
-- Ligature - ლიგატურა
-- Link - დამაკავშირებელი
-- Loop - რგოლი
-- Lowercase - ქვედა/პატარა ასო
-- Serif - სერიფი
-- Shoulder - მხარი
-- Small Caps - პატარა ასომთავრული
-- Spine - ხერხემალი
-- Spur - შვერი/შტო
-- Stem - ღერძი
-- Tail - კუდი
-- Terminal - დასასრული
-- Uppercase - ასომთავრული
-- x-height - ასო-სიმაღლე
+
+|  მაგალითი  |  სახელი  |  ინგლისურად  |
+|---------|--------------|---------------|
+| (img)  |  აპერტურა/ხვრელი  |  Aperture  |
+| (img)  |  ხელი  |  Arm  |
+| (img)  |  აღმავალი  |  Ascender  |
+| (img)  |  ფუძის ხაზი  |  Baseline  |
+| (img)  |  თასი  |  Bowl  |
+| (img)  |  შემხვედრი  |  Counter  |
+| (img)  |  განივა  |  Crossbar  |
+| (img)  |  ჩამავალი  |  Descender  |
+| (img)  |  დაიგონალური ხაზი  |  Diagonal Stroke  |
+| (img)  |  ყური  |  Ear  |
+| (img)  |  ფინიალი  |  Finial  |
+| (img)  |  წვრილი ხაზი  |  Hairline  |
+| (img)  |  ლიგატურა  |  Ligature  |
+| (img)  |  დამაკავშირებელი  |  Link  |
+| (img)  |  რგოლი  |  Loop  |
+| (img)  |  ქვედა/პატარა ასო  |  Lowercase  |
+| (img)  |  სერიფი  |  Serif  |
+| (img)  |  მხარი  |  Shoulder  |
+| (img)  |  პატარა ასომთავრული  |  Small Caps  |
+| (img)  |  ხერხემალი  |  Spine  |
+| (img)  |  შვერი/შტო  |  Spur  |
+| (img)  |  ღერძი  |  Stem  |
+| (img)  |  კუდი  |  Tail  |
+| (img)  |  დასასრული  |  Terminal  |
+| (img)  |  ასომთავრული  |  Uppercase  |
+| (img)  |  ასო-სიმაღლე  |  x-height  |
 
 კლასიფიკაცია შედარებით ბუნდოვანი საკითხია და არ არსებობს ობიექტური კატეგორიები, ამის მიუხედავად არის რამოდენიმე ძირითადი შეთანხმებული კატეგორია.
 - Blackletter (შავასოვანი)

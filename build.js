@@ -3,7 +3,6 @@
 require('harmonize')(['harmony-generators']);
 
 var Metalsmith = require('metalsmith'),
-  markdown = require('metalsmith-markdown'),
   autoprefixer = require('metalsmith-autoprefixer'),
   permalinks = require('metalsmith-permalinks'),
   layouts = require('metalsmith-layouts'),
@@ -14,7 +13,13 @@ var Metalsmith = require('metalsmith'),
   serve = require('metalsmith-serve'),
   stylus = require('metalsmith-stylus'),
   koutoSwiss = require('kouto-swiss'),
-  axis = require('axis');
+  axis = require('axis'),
+  mdattrs = require('markdown-it-attrs'),
+  mdFoot = require('markdown-it-footnote');
+
+var markdown = require('metalsmith-markdownit');
+var md = markdown('default');
+md.parser.use(mdattrs).use(mdFoot);
 
 new Metalsmith(__dirname)
   .metadata({
@@ -47,7 +52,7 @@ new Metalsmith(__dirname)
     'directory': 'assets/css',
     'move': true
   }))
-  .use(markdown())
+  .use(md)
   .use(permalinks({
     pattern: ':title',
     relative: 'false'
