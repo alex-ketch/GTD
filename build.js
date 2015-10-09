@@ -1,6 +1,6 @@
 'use strict';
 
-require('harmonize')(['harmony-generators']);
+require('harmonize');
 
 var Metalsmith = require('metalsmith'),
   autoprefixer = require('metalsmith-autoprefixer'),
@@ -34,18 +34,11 @@ new Metalsmith(__dirname)
   .use(coffee())
   .use(stylus(
     {
+      compress: true,
       use: [koutoSwiss(), axis()]
     }
   ))
   .use(autoprefixer())
-  .use(cleanCSS(
-    {
-      files: 'build/assets/**/*.css',
-      cleanCSS:
-      {
-        rebase: true
-      }
-  }))
   .use(copy(
   {
     'pattern': 'styl/*',
