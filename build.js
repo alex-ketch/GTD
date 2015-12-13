@@ -28,9 +28,7 @@ new Metalsmith(__dirname)
       url: 'https://type.ge'
     }
   })
-  .clean(false)
-  .ignore(['./','./package.json','./node_modules/','./build.js','./README.md','./src/', './src/layouts/'])
-  .destination('./')
+  .ignore(['_*.styl', '_*.css', '*.jade', '.DS_Store'])
   .use(coffee())
   .use(stylus(
     {
@@ -39,9 +37,8 @@ new Metalsmith(__dirname)
     }
   ))
   .use(autoprefixer())
-  .use(copy(
-  {
-    'pattern': 'styl/*',
+  .use(copy({
+    'pattern': 'assets/styl/*',
     'directory': 'assets/css',
     'move': true
   }))
@@ -51,9 +48,11 @@ new Metalsmith(__dirname)
     relative: 'false'
   }))
   .use(layouts({
+    'default': 'default.jade',
+    'directory': './src/layouts',
     'engine': 'jade',
-    'directory': 'layouts',
-    'partials': 'includes'
+    'partials': 'includes',
+    'pattern': '**/*.html'
   }))
   .use(serve({
     port: 8080,
