@@ -1,0 +1,44 @@
+{
+  "name": "georgian-type-design",
+  "version": "0.0.1",
+  "description": "Georgian Type Design: Past & Present",
+  "main": "build.js",
+  "scripts": {
+    "test": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-ketch/GeoType.git"
+  },
+  "keywords": [
+    "typography",
+    "georgian",
+    "design",
+    "font"
+  ],
+  "author": "Alex Ketch",
+  "license": "CC-BY-NC-ND-4.0",
+  "bugs": {
+    "url": "https://github.com/alex-ketch/GeoType/issues"
+  },
+  "homepage": "https://github.com/alex-ketch/GeoType#readme",
+  "devDependencies": {
+    "axis": "^0.5.0",
+    "harmonize": "^1.4.4",
+    "jade": "^1.11.0",
+    "kouto-swiss": "^0.11.13",
+    "markdown-it-attrs": "0.0.3",
+    "markdown-it-footnote": "^1.0.0",
+    "metalsmith": "^2.0.1",
+    "metalsmith-autoprefixer": "^1.1.0",
+    "metalsmith-clean-css": "^2.0.0",
+    "metalsmith-coffee": "0.0.2",
+    "metalsmith-copy": "^0.2.1",
+    "metalsmith-layouts": "^1.4.1",
+    "metalsmith-markdownit": "^0.1.2",
+    "metalsmith-permalinks": "^0.4.0",
+    "metalsmith-serve": "0.0.4",
+    "metalsmith-stylus": "^1.0.0",
+    "metalsmith-watch": "^1.0.1"
+  }
+}
