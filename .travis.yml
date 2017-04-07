@@ -1,0 +1,7 @@
+deploy:
+  github_token: $GITHUB_TOKEN
+  local_dir: ./dist
+  provider: pages
+  skip_cleanup: true
+  on:
+    branch: master
