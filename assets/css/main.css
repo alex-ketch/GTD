@@ -1,0 +1,44 @@
+@import url(markedAntique.css);
+@import url(./BPG Mikheil Stefane.css);
+@import url(./BPG Nostalgia.css);
+/* stylelint-disable color-no-hex */
+/* stylelint-enable */
+body { color: #4C4C4C; font-size: 18px; }
+
+article { margin: 0 auto; max-width: 700px; padding: 0 5%; }
+
+img { height: auto; width: 100%; }
+
+p { font-size: 1em; line-height: 1.6em; margin-bottom: .5em; }
+
+ul { ul: 'ka'; }
+
+h1, h2, h3, h4, h5, h6 { font-family: "BPG Mikheil Stefane"; margin-top: 2em; padding-top: .25em; }
+
+h1 { border-top: 1px solid #4C4C4C; line-height: 1.5; padding: 2rem 0 .25rem; }
+
+h1:first-of-type { border-top: none; text-align: center; }
+
+a:link, a:visited { color: #4C4C4C; }
+
+a:hover { color: #5CB49B; }
+
+a:active { color: #CFB039; }
+
+table { border: 1px solid #c4c3c3; border-collapse: collapse; width: 100%; }
+
+table th, table td { border-right: 1px solid #c4c3c3; border-bottom: 1px solid #c4c3c3; text-align: center; }
+
+table th img, table td img { display: block; max-height: 200px; width: auto; }
+
+table th { padding: .5rem 0; }
+
+table th, table tr:nth-of-type(2n) { background-color: #f7f7f7; }
+
+footer { color: #777; text-align: center; }
+
+footer a:link, footer a:visited { color: #777; text-decoration: none; }
+
+footer a:hover { color: #5CB49B; }
+
+footer a:active { color: #CFB039; }
