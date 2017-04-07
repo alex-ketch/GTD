@@ -7,7 +7,7 @@ script:
 
 deploy:
   github_token: $GITHUB_TOKEN
-  local_dir: "./dist"
+  local_dir: "./build"
   provider: pages
   skip_cleanup: true
   target_branch: "gh-pages"
