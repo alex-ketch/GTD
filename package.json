@@ -5,7 +5,7 @@
   "main": "build.js",
   "scripts": {
     "start": "node build.js",
-    "deploy": "node publish.js"
+    "deploy": "npm run start && node publish.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/alex-ketch/GeoType/issues"
   },
-  "homepage": "https://github.com/alex-ketch/GeoType#readme",
+  "homepage": "https://github.com/alex-ketch/GeoType",
   "devDependencies": {
     "markdown-it-attrs": "^0.8.0",
     "markdown-it-footnote": "^3.0.1",

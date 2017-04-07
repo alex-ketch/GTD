@@ -20,7 +20,7 @@ new Metalsmith(__dirname)
   .metadata({
     site: {
       title: 'Georgian Typography & Type Design',
-      url: 'https://type.ge'
+      url: 'https://alex-ketch.github.io/GeoType/'
     }
   })
   .ignore(['_*.styl', '_*.css', '*.pug', '.DS_Store'])
