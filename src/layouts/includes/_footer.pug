@@ -1,7 +1,14 @@
 footer
   p
-    | &copy; 
+    | &copy;
     a(href='http://ketch.me', title="ალექსანდრე კეჭაღმაძის ნამუშევრების ვებ-გვერდი", attr) ალექსანდრე კეჭაღმაძე
     |  2015
 
-script(type='text/javascript', src='http://localhost:35729/livereload.js')
+if (process.env.NODE_ENV !== "production")
+  script(src='http://localhost:35729/livereload.js')
+
+script(src='/assets/lightense.min.js')
+script.
+    window.addEventListener('load', function () {
+      Lightense('img');
+      }, false);

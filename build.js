@@ -1,24 +1,19 @@
 'use strict';
 
-require('harmonize');
+const Metalsmith   = require('metalsmith');
+const autoprefixer = require('metalsmith-autoprefixer');
+const permalinks   = require('metalsmith-permalinks');
+const layouts      = require('metalsmith-layouts');
+// const cleanCSS     = require('metalsmith-clean-css');
+const copy         = require('metalsmith-copy');
+const watch        = require('metalsmith-watch');
+const serve        = require('metalsmith-serve');
+const mdattrs      = require('markdown-it-attrs');
+const mdFoot       = require('markdown-it-footnote');
+const sass         = require('metalsmith-sass');
 
-var Metalsmith = require('metalsmith'),
-  autoprefixer = require('metalsmith-autoprefixer'),
-  permalinks = require('metalsmith-permalinks'),
-  layouts = require('metalsmith-layouts'),
-  coffee = require('metalsmith-coffee'),
-  cleanCSS = require('metalsmith-clean-css'),
-  copy = require('metalsmith-copy'),
-  watch = require('metalsmith-watch'),
-  serve = require('metalsmith-serve'),
-  stylus = require('metalsmith-stylus'),
-  koutoSwiss = require('kouto-swiss'),
-  axis = require('axis'),
-  mdattrs = require('markdown-it-attrs'),
-  mdFoot = require('markdown-it-footnote');
-
-var markdown = require('metalsmith-markdownit');
-var md = markdown('default');
+let markdown       = require('metalsmith-markdownit');
+let md = markdown('default');
 md.parser.use(mdattrs).use(mdFoot);
 
 new Metalsmith(__dirname)
@@ -28,14 +23,12 @@ new Metalsmith(__dirname)
       url: 'https://type.ge'
     }
   })
-  .ignore(['_*.styl', '_*.css', '*.jade', '.DS_Store'])
-  .use(coffee())
-  .use(stylus(
-    {
-      compress: true,
-      use: [koutoSwiss(), axis()]
-    }
-  ))
+  .ignore(['_*.styl', '_*.css', '*.pug', '.DS_Store'])
+  .use(sass({
+    outputDir: 'assets/css/',
+    outputStyle: 'compact', // nested, expanded, compact, compressed
+    precision: 8
+  }))
   .use(autoprefixer())
   .use(copy({
     'pattern': 'assets/styl/*',
@@ -48,9 +41,9 @@ new Metalsmith(__dirname)
     relative: 'false'
   }))
   .use(layouts({
-    'default': 'default.jade',
+    'default': 'default.pug',
     'directory': './src/layouts',
-    'engine': 'jade',
+    'engine': 'pug',
     'partials': 'includes',
     'pattern': '**/*.html'
   }))
@@ -66,12 +59,10 @@ new Metalsmith(__dirname)
       livereload: true,
     })
   )
-  .build(function(err)
-  {
-    if (err)
-    {
+  .build((err) => {
+    if (err) {
       throw err;
     } else {
-      console.log('The cast is forged!');
+      console.log('The cast is forged!'); // eslint-disable-line
     }
   });

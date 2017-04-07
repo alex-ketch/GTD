@@ -1,5 +1,5 @@
 ---
-layout: default.jade
+layout: default.pug
 title: Georgian Type Design
 collection: index
 permalink: false
@@ -17,10 +17,12 @@ permalink: false
 
 # ქართული დამწერლობა
 ამ პროექტის ფარგლები არ შეიცავს ქართული კალიგრაფიის გარჩევას, ამის და მიუხედავად აუცილებელა განვიხილოთ ხელწერის განვითარება. ამით შევისწავლით თუ როგორ მივაღწიეთ დღევანდელ ასიოების ფორმებამდე, და როგორ გადაითარგმნა ხელნაწერი მექანიკურ ბეჭდვათ—სტამბიდან კომპიუტერულ შრიფტებამდე.
-![](img/02_typeHistory/%E1%83%90%E1%83%A1%E1%83%9D%E1%83%9B%E1%83%97%E1%83%90%E1%83%95%E1%83%A0%E1%83%A3%E1%83%9A%E1%83%98,_%E1%83%9C%E1%83%A3%E1%83%A1%E1%83%AE%E1%83%A3%E1%83%A0%E1%83%98,_%E1%83%9B%E1%83%AE%E1%83%94%E1%83%93%E1%83%A0%E1%83%A3%E1%83%9A%E1%83%98.png)
+
+![](./img/02_typeHistory/allGeorgianAlphabets.png)
+
 - ხუცური
 	- ასომთავრული და ნუსხური, ერთბაშად სახელად ხუცური, ეგრეთვე "საეკლესიო ნაწერი"., ასომთავრული კი დიდი-ასოების ადგილზე.[^1]
-![ვიკიპედიის მადლით. https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Asomtavruli.svg](img/02_typeHistory/Asomtavruli.svg.png "ასომთავრული ასო-ფორმა")
+![ვიკიპედიის მადლით. https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Asomtavruli.svg](./img/02_typeHistory/Asomtavruli.svg.png "ასომთავრული ასო-ფორმა")
 - ასომთავრული (მრგლოვანი/დამრგვალებული)
 	- ჩამოყალიბდა ახ. წ. III-IV საუკუნეების შორის
 		- ყველაზე ძველი ქართული ანბანი
@@ -32,13 +34,13 @@ permalink: false
 		- ძირითად შესრულებული იყო ქვაზე, როამაული ტრაიანის მსგავსად.
 		- IX-X საუკუნის ნაწერებში ჩანს  ჰორიზონტალურ და ვერტიკალურ ხაზების სისქის შორის სხვაობა, რომლიც მიგვანიშნებს რომ შესრულებული უყო ფართო თავიანი კალმით.
 		- თავიდან სომთავრულ ნაწერში არ იყენებდნენ ჰარს.
-![ვიკიპედიის მადლით. https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Nuskhuri.svg/1000px-](img/02_typeHistory/Nuskhuri.svg.png "ნუსხური ასო-ფორმა")
+![ვიკიპედიის მადლით. https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Nuskhuri.svg/1000px-](./img/02_typeHistory/Nuskhuri.svg.png "ნუსხური ასო-ფორმა")
 - ნუსხური (კუთხოვანი/პატარა ასო)
 	- განვითარდა სადღაც IX საუკუნეში
 		- გამოიყენებოდა მთავრულთან ერთად
 		- ნუსხური დამწერლობა ასომთავრულის უკვე განვითარებული ფორმებიდან წარმოიშვა
 		- კუთხოვანი, სწრაფი, მარჯვნივ გადახრილი დამწერლობაა
-![ვიკიპედიის მადლით https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Mkhedruli.svg/1500px-Mkhedruli.svg.png](img/02_typeHistory/Mkhedruli.svg.png "მხედრული ასო-ფორმა")
+![ვიკიპედიის მადლით https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Mkhedruli.svg/1500px-Mkhedruli.svg.png](./img/02_typeHistory/Mkhedruli.svg.png "მხედრული ასო-ფორმა")
 - მხედრული (საჯარო ნაწერი)
 	- განვითარდა ხუცურიდან სწრაფი ხელნაწერით, არაბული დამწერლობის სტილისა და კალიგრაფიის ძლიერი ზეგავლენით.
 	- ასოების ფორმები ვერტიკალზეა აგებული, ხოლო კონტურები კი მომრგვალებულია და ერთიან მონახაზს ქმნის.
@@ -51,32 +53,32 @@ permalink: false
 
 |  მაგალითი  |  სახელი  |  ინგლისურად  |
 |---------|--------------|---------------|
-| ![](/img/typeAnatomy/Aperture.svg)  |  აპერტურა/ხვრელი  |  Aperture  |
-| ![](/img/typeAnatomy/Arm.svg)  |  ხელი  |  Arm  |
-| ![](/img/typeAnatomy/Ascender.svg)  |  აღმავალი  |  Ascender  |
-| ![](/img/typeAnatomy/Baseline.svg)  |  ფუძის ხაზი  |  Baseline  |
-| ![](/img/typeAnatomy/Bowl.svg)  |  თასი  |  Bowl  |
-| ![](/img/typeAnatomy/Counter.svg)  |  შემხვედრი  |  Counter  |
-| ![](/img/typeAnatomy/Crossbar.svg)  |  განივა  |  Crossbar  |
-| ![](/img/typeAnatomy/Descender.svg)  |  ჩამავალი  |  Descender  |
-| ![](/img/typeAnatomy/Diagonal.svg)  |  დაიგონალური ხაზი  |  Diagonal Stroke  |
-| ![](/img/typeAnatomy/Ear.svg)  |  ყური  |  Ear  |
-| ![](/img/typeAnatomy/Finial.svg)  |  ფინიალი  |  Finial  |
-| ![](/img/typeAnatomy/Hairline.svg)  |  წვრილი ხაზი  |  Hairline  |
-| ![](/img/typeAnatomy/Ligature.svg)  |  ლიგატურა  |  Ligature  |
-| ![](/img/typeAnatomy/Link.svg)  |  დამაკავშირებელი  |  Link  |
-| ![](/img/typeAnatomy/Loop.svg)  |  რგოლი  |  Loop  |
-| ![](/img/typeAnatomy/Lowercase.svg)  |  ქვედა/პატარა ასო  |  Lowercase  |
-| ![](/img/typeAnatomy/Serif.svg)  |  სერიფი  |  Serif  |
-| ![](/img/typeAnatomy/Shoulder.svg)  |  მხარი  |  Shoulder  |
-| ![](/img/typeAnatomy/SmallCaps.svg)  |  პატარა ასომთავრული  |  Small Caps  |
-| ![](/img/typeAnatomy/Spine.svg)  |  ხერხემალი  |  Spine  |
-| ![](/img/typeAnatomy/Spur.svg)  |  შვერი/შტო  |  Spur  |
-| ![](/img/typeAnatomy/Stem.svg)  |  ღერძი  |  Stem  |
-| ![](/img/typeAnatomy/Tail.svg)  |  კუდი  |  Tail  |
-| ![](/img/typeAnatomy/Terminal.svg)  |  დასასრული  |  Terminal  |
-| ![](/img/typeAnatomy/Uppercase.svg)  |  ასომთავრული  |  Uppercase  |
-| ![](/img/typeAnatomy/x-height.svg)  |  ასო-სიმაღლე  |  x-height  |
+| ![](./img/typeAnatomy/Aperture.svg)  |  აპერტურა/ხვრელი  |  Aperture  |
+| ![](./img/typeAnatomy/Arm.svg)  |  ხელი  |  Arm  |
+| ![](./img/typeAnatomy/Ascender.svg)  |  აღმავალი  |  Ascender  |
+| ![](./img/typeAnatomy/Baseline.svg)  |  ფუძის ხაზი  |  Baseline  |
+| ![](./img/typeAnatomy/Bowl.svg)  |  თასი  |  Bowl  |
+| ![](./img/typeAnatomy/Counter.svg)  |  შემხვედრი  |  Counter  |
+| ![](./img/typeAnatomy/Crossbar.svg)  |  განივა  |  Crossbar  |
+| ![](./img/typeAnatomy/Descender.svg)  |  ჩამავალი  |  Descender  |
+| ![](./img/typeAnatomy/Diagonal.svg)  |  დაიგონალური ხაზი  |  Diagonal Stroke  |
+| ![](./img/typeAnatomy/Ear.svg)  |  ყური  |  Ear  |
+| ![](./img/typeAnatomy/Finial.svg)  |  ფინიალი  |  Finial  |
+| ![](./img/typeAnatomy/Hairline.svg)  |  წვრილი ხაზი  |  Hairline  |
+| ![](./img/typeAnatomy/Ligature.svg)  |  ლიგატურა  |  Ligature  |
+| ![](./img/typeAnatomy/Link.svg)  |  დამაკავშირებელი  |  Link  |
+| ![](./img/typeAnatomy/Loop.svg)  |  რგოლი  |  Loop  |
+| ![](./img/typeAnatomy/Lowercase.svg)  |  ქვედა/პატარა ასო  |  Lowercase  |
+| ![](./img/typeAnatomy/Serif.svg)  |  სერიფი  |  Serif  |
+| ![](./img/typeAnatomy/Shoulder.svg)  |  მხარი  |  Shoulder  |
+| ![](./img/typeAnatomy/SmallCaps.svg)  |  პატარა ასომთავრული  |  Small Caps  |
+| ![](./img/typeAnatomy/Spine.svg)  |  ხერხემალი  |  Spine  |
+| ![](./img/typeAnatomy/Spur.svg)  |  შვერი/შტო  |  Spur  |
+| ![](./img/typeAnatomy/Stem.svg)  |  ღერძი  |  Stem  |
+| ![](./img/typeAnatomy/Tail.svg)  |  კუდი  |  Tail  |
+| ![](./img/typeAnatomy/Terminal.svg)  |  დასასრული  |  Terminal  |
+| ![](./img/typeAnatomy/Uppercase.svg)  |  ასომთავრული  |  Uppercase  |
+| ![](./img/typeAnatomy/x-height.svg)  |  ასო-სიმაღლე  |  x-height  |
 
 # კლასიფიკაცია
 კლასიფიკაცია შედარებით ბუნდოვანი საკითხია და არ არსებობს ობიექტური კატეგორიები, ამის მიუხედავად არის რამოდენიმე ძირითადი შეთანხმებული კატეგორია.
