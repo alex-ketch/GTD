@@ -1,17 +1,17 @@
 'use strict';
 
-var ghpages = require('gh-pages'),
-       path = require('path');
+const ghpages = require('gh-pages');
+const path = require('path');
 
 ghpages.publish(
   path.join(__dirname, 'build'), {
-     message: 'Auto-generated commit'
+    message: 'Auto-generated commit'
   },
-  function(err) {
+  (err) => {
     if (err) {
       throw err;
     } else {
-      console.log('Site has been updated!');
+      console.log('Site has been updated!'); // eslint-disable-line
     }
   }
 );
