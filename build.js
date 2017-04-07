@@ -6,8 +6,6 @@ const permalinks   = require('metalsmith-permalinks');
 const layouts      = require('metalsmith-layouts');
 // const cleanCSS     = require('metalsmith-clean-css');
 const copy         = require('metalsmith-copy');
-const watch        = require('metalsmith-watch');
-const serve        = require('metalsmith-serve');
 const mdattrs      = require('markdown-it-attrs');
 const mdFoot       = require('markdown-it-footnote');
 const sass         = require('metalsmith-sass');
@@ -47,18 +45,6 @@ new Metalsmith(__dirname)
     'partials': 'includes',
     'pattern': '**/*.html'
   }))
-  .use(serve({
-    port: 8080,
-    verbose: true
-  }))
-  .use(
-    watch({
-      paths: {
-        '${source}/**/*': true
-      },
-      livereload: true,
-    })
-  )
   .build((err) => {
     if (err) {
       throw err;
